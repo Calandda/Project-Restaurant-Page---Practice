@@ -2,7 +2,18 @@
 
 ## NPM Packages Used
 
-	-
+	- Webpack 
+	- Webpack-cli
+		- Javascript bundler
+	- html-webpack-plugin
+		- HTML webpack functionality
+	- style-loader
+	- css-loader
+		- CSS webpack functionality
+	- html-loader
+		- html image functionality
+	- webpack-dev-server
+		- error message and bundling code live
 
 # Credits
 		
