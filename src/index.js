@@ -6,6 +6,7 @@ import './style.css';
 class mainObject{
 	mainDiv = document.querySelector('#content');
 	mainNav = document.querySelector('#navMain');
+	shopName = 'Pizza Time';
 	constructor(){
 		this.mainDiv.textContent = 'test';
 		this.mainNav.addEventListener("click",(e) => {
@@ -17,7 +18,7 @@ class mainObject{
 			console.log(e.target.className);
 			if(e.target.className === 'buttonHome'){
 				console.log(home.getHomeCheck());
-				home.setHomePage(this.mainDiv);
+				home.setHomePage(this.mainDiv, this.shopName);
 			} else if(e.target.className === 'buttonAbout'){
 				console.log(about.getAboutCheck());
 			} else if(e.target.className === 'buttonMenu'){

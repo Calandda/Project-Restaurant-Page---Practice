@@ -5,9 +5,16 @@ nav {
 #content {
 	display: flex;
 	justify-content: center;
+	height: 90vh;
 }
 
 .divHeader{
 	display: flex;
 	justify-content: center;
+}
+
+#aIcons8{
+	display: flex;
+	justify-content: center;
+	gap: 4px;
 }
