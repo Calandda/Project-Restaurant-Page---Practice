@@ -1,16 +1,39 @@
+body{
+	padding: 0;
+	margin: 0;
+}
 nav {
 	display: flex;
 	justify-content: center;
 }
 #content {
 	display: flex;
-	justify-content: center;
-	height: 90vh;
+	align-items: center;
+	flex-direction: column;
+	height: 84vh;
+}
+
+#navMain{
+	height: 10vh;
+	background-color: hsl(0, 0%, 50%);
+}
+
+#navMain > button{
+	width: 200px;
+	border: 0px;
 }
 
 .divHeader{
 	display: flex;
 	justify-content: center;
+}
+
+.divBG{
+	width: 100vw;
+	height: 40vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -240px;
 }
 
 #aIcons8{

@@ -5,6 +5,9 @@ class aboutObject {
 	getAboutCheck(){
 		return this.aboutCheck;
 	}
+	setAboutPage(mainDiv, storePage){
+		
+	}
 };
 
 const about = new aboutObject();

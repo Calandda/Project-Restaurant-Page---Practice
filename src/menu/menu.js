@@ -5,6 +5,8 @@ class menuObject{
 	getMenuCheck(){
 		return this.menuCheck;
 	};
+	setMenuPage(mainDiv,storePage){
+	};
 };
 
 const menu = new menuObject();
