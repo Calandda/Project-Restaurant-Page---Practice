@@ -1,6 +1,6 @@
-import {home} from './home.js';
-import {about} from './about.js';
-import {menu} from './menu.js';
+import {home} from './home/home.js';
+import {about} from './about/about.js';
+import {menu} from './menu/menu.js';
 import './style.css';
 
 class mainObject{
