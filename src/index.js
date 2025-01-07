@@ -10,11 +10,19 @@ class mainObject{
 		this.mainDiv.textContent = 'test';
 		this.mainNav.addEventListener("click",(e) => {
 			this.clearMain();
-			const template = document.querySelector('.templateHeader');
-			console.log(template);
-			const clone = template.cloneNode(true);
-			this.mainDiv.appendChild(clone);
-			console.log(e);
+			//const template = document.querySelector('.templateHeader');
+			//console.log(template);
+			//const clone = template.cloneNode(true);
+			//this.mainDiv.appendChild(clone);
+			console.log(e.target.className);
+			if(e.target.className === 'buttonHome'){
+				console.log(home.getHomeCheck());
+				home.setHomePage(this.mainDiv);
+			} else if(e.target.className === 'buttonAbout'){
+				console.log(about.getAboutCheck());
+			} else if(e.target.className === 'buttonMenu'){
+				console.log(menu.getMenuCheck());
+			}
 		});
 	};
 	clearMain(){
@@ -25,6 +33,3 @@ class mainObject{
 }
 
 const mainPage = new mainObject();
-console.log(home.getHomeCheck());
-console.log(about.getAboutCheck());
-console.log(menu.menuCheck);
