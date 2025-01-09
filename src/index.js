@@ -15,14 +15,17 @@ class mainObject{
 			//console.log(template);
 			//const clone = template.cloneNode(true);
 			//this.mainDiv.appendChild(clone);
-			console.log(e.target.className);
-			if(e.target.className === 'buttonHome'){
-				console.log(home.getHomeCheck());
-				home.setHomePage(this.mainDiv, this.shopName);
-			} else if(e.target.className === 'buttonAbout'){
-				console.log(about.getAboutCheck());
-			} else if(e.target.className === 'buttonMenu'){
-				console.log(menu.getMenuCheck());
+			console.log(e.target.tagName);
+			if(e.target.tagName == 'BUTTON'){
+				this.setNavButton(e.target);
+				if(e.target.className === 'buttonHome'){
+					console.log(home.getHomeCheck());
+					home.setHomePage(this.mainDiv, this.shopName);
+				} else if(e.target.className === 'buttonAbout'){
+					console.log(about.getAboutCheck());
+				} else if(e.target.className === 'buttonMenu'){
+					console.log(menu.getMenuCheck());
+				}
 			}
 		});
 	};
@@ -31,6 +34,13 @@ class mainObject{
 			this.mainDiv.removeChild(this.mainDiv.firstChild);
 		}
 	};
+	setNavButton(buttonSelected){
+		const navBar = document.querySelectorAll('.buttonNav');
+		for(let i = 0; i < navBar.length;i++){
+			console.log(navBar[i].classList.remove('colorGray'));
+		};
+		buttonSelected.classList.add('colorGray');
+	}
 }
 
 const mainPage = new mainObject();

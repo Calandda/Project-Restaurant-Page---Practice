@@ -4,7 +4,7 @@ body{
 }
 nav {
 	display: flex;
-	justify-content: center;
+	justify-content: end;
 }
 #content {
 	display: flex;
@@ -14,13 +14,20 @@ nav {
 }
 
 #navMain{
-	height: 10vh;
+	height: 80px;
 	background-color: hsl(0, 0%, 50%);
 }
 
 #navMain > button{
 	width: 200px;
 	border: 0px;
+}
+
+.colorGray{
+	background-color: hsla(0, 100%, 100%,0.5);
+}
+.colorWhite{
+	background-color: hsla(0, 100%, 100%, 1);
 }
 
 .divHeader{
