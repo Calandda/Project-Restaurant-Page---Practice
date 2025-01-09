@@ -1,4 +1,5 @@
 import pizzaClose from './imagesHome/PizzaClose.jpg';
+import menuItems from '../menu-items/menu_Items.js';
 
 class homeObject {
 	constructor(){
@@ -20,6 +21,8 @@ class homeObject {
 		mainDiv.appendChild(clone);
 		mainDiv.appendChild(clone2);
 	};
+	setPromoItems(divPromo){
+	}
 };
 
 const home = new homeObject();
