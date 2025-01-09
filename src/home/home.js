@@ -13,16 +13,23 @@ class homeObject {
 		const clone = template.content.cloneNode(true);
 		const mainImage = clone.querySelector('.divBG');
 		mainImage.style.backgroundImage = "url("+pizzaClose+")";
-		const template2 = document.querySelector('.templateHeader');
-		const clone2 = template2.content.cloneNode(true);
-		const shopHeader = clone2.querySelector('.divHeader');
-		shopHeader.textContent = storePage;
 		console.log(mainDiv);
+		const divPromo = clone.querySelector('.divPromoItems');
+		for(let i = 0; i < 3; i++){
+			this.setPromoItems(divPromo, i);
+		}
 		mainDiv.appendChild(clone);
-		mainDiv.appendChild(clone2);
+		
 	};
-	setPromoItems(divPromo){
-	}
+	setPromoItems(divPromo, index){
+		const templatePromoItem = document.querySelector('.templatePromo');
+		const clone = templatePromoItem.content.cloneNode(true);
+		const promoImage = clone.querySelector('.divPromoItemImage');
+		const promoTitle = clone.querySelector('.divPromoItemTitle');
+		promoImage.style.backgroundImage = "url("+menuItems[index][1]+")";
+		promoTitle.textContent = menuItems[index][0];
+		divPromo.appendChild(clone);
+	};
 };
 
 const home = new homeObject();

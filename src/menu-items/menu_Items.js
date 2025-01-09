@@ -1,5 +1,9 @@
+import pizzaDish from '../menu-items/images/pizza-dish.jpg';
+import pastaTomato from '../menu-items/images/tomato-pasta.jpg';
+import pastaWhite from '../menu-items/images/white-pasta.jpg';
+
 export default [
-    ['Pizza', '../menu-Items/pizza-dish.jpg'],
-    ['Tomato Pasta', '../menu-Items/tomato-pasta.jpg'],
-    ['White Pasta', '../menu-Items/white-pasta.jpg']
+    ['Pizza', pizzaDish],
+    ['Tomato Pasta', pastaTomato],
+    ['White Pasta', pastaWhite]
 ];

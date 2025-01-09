@@ -73,19 +73,38 @@ nav {
 	align-items: center;
 	margin-top: 60px;
 	margin-bottom: 60px;
-	height: 700px;
+	height: 400px;
 }
 .divPromos{
 	height: 100%;
-	width: 80%;
+	width: 60%;
 	display: flex;
 	flex-flow: column;
 }
+.divPromoItems{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	padding: 0px 100px 0px 100px;
+}
+
 h2{
 	font-size: 40px;
 	justify-self: center;
 	align-self: center;
 }
+.divPromoItemImage{
+	width: 200px;
+	height: 200px;
+	background-image: url('./menu-items/images/pizza-dish.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.divPromoItemTitle{
+	font-size: 20px;
+	font-weight: 700;
+}
+
 #aIcons8{
 	display: flex;
 	justify-content: center;
