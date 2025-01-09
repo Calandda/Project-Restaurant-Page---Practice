@@ -30,6 +30,20 @@ nav {
 	font-weight: 1000;
 }
 
+.divTitle{
+	flex-basis: 65%;
+	display: flex;
+	flex-flow: row;
+	justify-self: start;
+}
+
+.divTitle > p{
+	font-weight: 700;
+	font-size: 20px;
+	justify-self: center;
+	align-self: center;
+}
+
 .colorGray{
 	background-color: hsla(0, 0%, 50%,1);
 }
@@ -64,8 +78,14 @@ nav {
 .divPromos{
 	height: 100%;
 	width: 80%;
+	display: flex;
+	flex-flow: column;
 }
-
+h2{
+	font-size: 40px;
+	justify-self: center;
+	align-self: center;
+}
 #aIcons8{
 	display: flex;
 	justify-content: center;
