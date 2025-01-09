@@ -1,8 +1,14 @@
+html{
+	overflow-y: scroll;
+}
 body{
 	padding: 0;
 	margin: 0;
 }
 nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	display: flex;
 	justify-content: end;
 }
@@ -10,7 +16,7 @@ nav {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: 84vh;
+	height: 86vh;
 }
 
 #navMain{
@@ -21,10 +27,14 @@ nav {
 #navMain > button{
 	width: 200px;
 	border: 0px;
+	font-weight: 1000;
 }
 
 .colorGray{
-	background-color: hsla(0, 100%, 100%,0.5);
+	background-color: hsla(0, 0%, 50%,1);
+}
+.colorGrayHalf{
+	background-color: hsla(0,0%,25%,.5);
 }
 .colorWhite{
 	background-color: hsla(0, 100%, 100%, 1);
@@ -36,15 +46,36 @@ nav {
 }
 
 .divBG{
-	width: 100vw;
-	height: 40vh;
+	width: clamp(99vw,99vw,100vw);
+	height: 400px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0px -240px;
+}
+
+.sectionPromos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	height: 700px;
+}
+.divPromos{
+	height: 100%;
+	width: 80%;
 }
 
 #aIcons8{
 	display: flex;
 	justify-content: center;
 	gap: 4px;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: hsl(0,0%,50%);
 }

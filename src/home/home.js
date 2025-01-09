@@ -16,6 +16,7 @@ class homeObject {
 		const clone2 = template2.content.cloneNode(true);
 		const shopHeader = clone2.querySelector('.divHeader');
 		shopHeader.textContent = storePage;
+		console.log(mainDiv);
 		mainDiv.appendChild(clone);
 		mainDiv.appendChild(clone2);
 	};

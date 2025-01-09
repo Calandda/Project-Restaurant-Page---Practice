@@ -8,22 +8,18 @@ class mainObject{
 	mainNav = document.querySelector('#navMain');
 	shopName = 'Pizza Time';
 	constructor(){
-		this.mainDiv.textContent = 'test';
+		home.setHomePage(this.mainDiv, this.shopName);
 		this.mainNav.addEventListener("click",(e) => {
-			this.clearMain();
-			//const template = document.querySelector('.templateHeader');
-			//console.log(template);
-			//const clone = template.cloneNode(true);
-			//this.mainDiv.appendChild(clone);
 			console.log(e.target.tagName);
 			if(e.target.tagName == 'BUTTON'){
+				this.clearMain();
 				this.setNavButton(e.target);
-				if(e.target.className === 'buttonHome'){
+				if(e.target.className.includes('buttonHome')){
 					console.log(home.getHomeCheck());
 					home.setHomePage(this.mainDiv, this.shopName);
-				} else if(e.target.className === 'buttonAbout'){
+				} else if(e.target.className.includes('buttonAbout')){
 					console.log(about.getAboutCheck());
-				} else if(e.target.className === 'buttonMenu'){
+				} else if(e.target.className.includes('buttonMenu')){
 					console.log(menu.getMenuCheck());
 				}
 			}
@@ -37,9 +33,9 @@ class mainObject{
 	setNavButton(buttonSelected){
 		const navBar = document.querySelectorAll('.buttonNav');
 		for(let i = 0; i < navBar.length;i++){
-			console.log(navBar[i].classList.remove('colorGray'));
+			navBar[i].classList.remove('colorGrayHalf');
 		};
-		buttonSelected.classList.add('colorGray');
+		buttonSelected.classList.add('colorGrayHalf');
 	}
 }
 
