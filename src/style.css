@@ -5,9 +5,12 @@ body{
 	padding: 0;
 	margin: 0;
 }
-nav {
-	position: fixed;
+header{
+	position: sticky;
 	top: 0;
+	left: 0;
+}
+nav {
 	width: 100%;
 	display: flex;
 	justify-content: end;
@@ -132,14 +135,14 @@ h2{
 	font-size: 20px;
 	font-weight: 700;
 }
-.divPage{
-	padding-top: 80px;
-}
 .divContactUs{
 	margin-top: 40px;
 	width: 400px;
 	display: flex;
 	flex-flow: column;
+}
+.divContactUs > p{
+	font-weight: 700;
 }
 #aIcons8{
 	display: flex;
