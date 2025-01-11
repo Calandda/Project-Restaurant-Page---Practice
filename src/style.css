@@ -105,7 +105,8 @@ nav {
 	font-size: 192px;
 }
 .sectionContactTitle{
-	padding: 40px;
+	margin-top: 60px;
+	padding: 20px 40px;
 }
 .sectionContactTitle > p{
 	font-weight: 700;
@@ -134,7 +135,12 @@ h2{
 .divPage{
 	padding-top: 80px;
 }
-
+.divContactUs{
+	margin-top: 40px;
+	width: 400px;
+	display: flex;
+	flex-flow: column;
+}
 #aIcons8{
 	display: flex;
 	justify-content: center;
