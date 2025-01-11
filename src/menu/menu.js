@@ -6,6 +6,9 @@ class menuObject{
 		return this.menuCheck;
 	};
 	setMenuPage(mainDiv,storePage){
+		const template = document.querySelector('.templateMenu');
+		const clone = template.content.cloneNode(true);
+		mainDiv.appendChild(clone);
 	};
 };
 

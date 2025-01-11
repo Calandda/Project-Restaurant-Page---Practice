@@ -19,8 +19,10 @@ class mainObject{
 					home.setHomePage(this.mainDiv, this.shopName);
 				} else if(e.target.className.includes('buttonAbout')){
 					console.log(about.getAboutCheck());
+					about.setAboutPage(this.mainDiv, this.shopName);
 				} else if(e.target.className.includes('buttonMenu')){
 					console.log(menu.getMenuCheck());
+					menu.setMenuPage(this.mainDiv, this.shopName);
 				}
 			}
 		});

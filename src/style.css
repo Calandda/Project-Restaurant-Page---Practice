@@ -87,7 +87,34 @@ nav {
 	justify-content: space-between;
 	padding: 0px 100px 0px 100px;
 }
-
+.sectionNormal{
+	display: flex;
+	height: 100px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.sectionTitle > h1{
+	font-weight: 700;
+	font-size: 48px;
+}
+.sectionOpen > p{
+	font-weight: 700;
+	font-size: 192px;
+}
+.sectionContactTitle{
+	padding: 40px;
+}
+.sectionContactTitle > p{
+	font-weight: 700;
+	font-size: 64px;
+}
+.sectionAdd{
+	font-size: 48px;
+	font-weight: 700;
+}
 h2{
 	font-size: 40px;
 	justify-self: center;
@@ -103,6 +130,9 @@ h2{
 .divPromoItemTitle{
 	font-size: 20px;
 	font-weight: 700;
+}
+.divPage{
+	padding-top: 80px;
 }
 
 #aIcons8{

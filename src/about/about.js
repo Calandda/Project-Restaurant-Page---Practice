@@ -6,7 +6,10 @@ class aboutObject {
 		return this.aboutCheck;
 	}
 	setAboutPage(mainDiv, storePage){
-		
+		const template = document.querySelector('.templateAbout');
+		const clone = template.content.cloneNode(true);
+
+		mainDiv.appendChild(clone);
 	}
 };
 

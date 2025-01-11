@@ -25,4 +25,12 @@
 
 	- Pizza Icon by Icons8
 		[https://icons8.com/icon/65012/pizza]
-		
+
+	-Pizza Dish by Cats Coming on Pexels
+		[https://www.pexels.com/photo/pizza-dish-367915/]
+
+	-Pasta with Sliced Tomatoes and Green Leaf by Angele J on Pexels
+		[https://www.pexels.com/photo/cooked-pasta-with-sliced-tomatoes-and-green-leafy-128408/]	
+	
+	-Pasta on White Plate by Sebastian Coman Photography on Pexels
+		[https://www.pexels.com/photo/pasta-on-white-plate-3606799/]
