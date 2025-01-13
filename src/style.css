@@ -124,6 +124,9 @@ h2{
 	justify-self: center;
 	align-self: center;
 }
+h3{
+	font-size: 60px;
+}
 .divPromoItemImage{
 	width: 200px;
 	height: 200px;
@@ -136,13 +139,18 @@ h2{
 	font-weight: 700;
 }
 .divContactUs{
-	margin-top: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width: 400px;
 	display: flex;
 	flex-flow: column;
 }
 .divContactUs > p{
 	font-weight: 700;
+}
+.divMenuItem{
+	margin: 20px;
+	padding: 30px;
 }
 #aIcons8{
 	display: flex;
@@ -151,9 +159,7 @@ h2{
 }
 
 footer{
-	position: fixed;
-	bottom: 0;
-	left: 0;
+	
 	width: 100%;
 	background-color: hsl(0,0%,50%);
 }

@@ -9,6 +9,7 @@ class mainObject{
 	shopName = 'Pizza Time';
 	constructor(){
 		home.setHomePage(this.mainDiv, this.shopName);
+		this.setFooter();
 		this.mainNav.addEventListener("click",(e) => {
 			console.log(e.target.tagName);
 			if(e.target.tagName == 'BUTTON'){
@@ -24,6 +25,7 @@ class mainObject{
 					console.log(menu.getMenuCheck());
 					menu.setMenuPage(this.mainDiv, this.shopName);
 				}
+				this.setFooter();
 			}
 		});
 	};
@@ -39,6 +41,11 @@ class mainObject{
 		};
 		buttonSelected.classList.add('colorGrayHalf');
 	}
+	setFooter(){
+		const templateFooter = document.querySelector('.templateFooter');
+		const clone = templateFooter.content.cloneNode(true);
+		this.mainDiv.appendChild(clone);
+	};
 }
 
 const mainPage = new mainObject();

@@ -8,7 +8,9 @@ class aboutObject {
 	setAboutPage(mainDiv, storePage){
 		const template = document.querySelector('.templateAbout');
 		const clone = template.content.cloneNode(true);
-		this.setContactUs(clone);
+		for(let i=0;i<3;i++){
+			this.setContactUs(clone);
+		}
 		mainDiv.appendChild(clone);
 	}
 	setContactUs(clone){
